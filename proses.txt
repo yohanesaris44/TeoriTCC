@@ -1,0 +1,20 @@
+langkah-langkah heroku
+
+Pertama Buka website heroku https://www.heroku.com/. 
+buat akun baru.
+Setelah selesai pilih project. pilih : PHP
+Download heroku cli untuk Windows, untuk deployment membutuhkan cli dari heroku.
+Setelah selesai install heroku cli, login dengan akun yang telah dibuat tadi dengan menggunakan perintah :
+   heroku login
+   masukkan email dan password
+Install Php terlebih di php.net
+Install Composer juga di https://getcomposer.org/download/
+Masukkan perintah berikut untuk melakukan git clone dari git hub
+   git clone https://github.com/yohanesaris44/TeoriTCC
+   Setelah selesai melakukan proses clone pindah directory dengan menggetikkan perintah :
+   cd TCC
+Langkah selanjutnya adalah deploy aplikasi dengan perintah:
+    heroku create
+    git push heroku master
+    heroku ps:scale web=1
+    heroku open
